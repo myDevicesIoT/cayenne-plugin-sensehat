@@ -16,7 +16,7 @@ From the command line run the following commands to install this plugin.
 ```
 cd /etc/myDevices/plugins
 sudo git clone https://github.com/myDevicesIoT/cayenne-plugin-sensehat.git
-cd sensehat
+cd cayenne-plugin-sensehat
 sudo python3 setup.py install
 sudo service myDevices restart
 ```
