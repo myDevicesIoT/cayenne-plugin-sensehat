@@ -38,7 +38,7 @@ def start_server(emulate=False):
     manager.get_server().serve_forever()
 
 def connect_client():
-     """Connect a client to the sensehat service."""
+    """Connect a client to the sensehat service."""
     try:
         debug('Connecting to sensehat service')        
         SenseHATManager.register('SenseHat')
