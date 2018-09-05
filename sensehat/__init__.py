@@ -21,7 +21,7 @@ class SenseHAT():
         self.sense_hat = None
         self.digital_value = 0
         self.analog_value = 0.0
-        self.image_file = os.path.join('/etc/myDevices/plugins/sensehat/data/image.png')
+        self.image_file = os.path.join('/etc/myDevices/plugins/cayenne-plugin-sensehat/data/image.png')
         self.call_sense_hat_function('clear')
 
     def init_sense_hat(self):
