@@ -123,5 +123,5 @@ class SenseHAT():
 
     def set_analog(self, value):
         """Displays the analog value on the Sense HAT LED matrix."""
-        self.value = value
+        self.analog_value = value
         self.call_sense_hat_function('show_message', str(self.value))
