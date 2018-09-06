@@ -32,7 +32,7 @@ class SenseHAT():
                 self.manager.use_emulator(self.use_emulator)
                 self.sense_hat = self.manager.SenseHat()
             except ConnectionRefusedError as e:
-                info('Connection refused')
+                info('Sense HAT service connection refused')
                 error(e)
             except RemoteError as e:
                 error('Failed to connect to Sense HAT device')
