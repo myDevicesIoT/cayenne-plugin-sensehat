@@ -41,6 +41,7 @@ setup(name             = 'sensehat',
       )
 
 subprocess.call(['systemctl', 'daemon-reload'])
+subprocess.call(['systemctl', 'preset', 'sensehat.service'])
 subprocess.call(['systemctl', 'start', 'sensehat.service'])
 
 if reboot_required:
