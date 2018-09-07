@@ -63,9 +63,7 @@ class SenseHAT():
 
     def get_humidity(self):
         """Gets the humidity as a tuple with type and unit."""
-        value = self.call_sense_hat_function('get_humidity')
-        if value is not None:
-            return (value / 100, 'rel_hum', 'p')
+        return (self.call_sense_hat_function('get_humidity'), 'rel_hum', 'p')
 
     def get_pressure(self):
         """Gets the pressure as a tuple with type and unit."""
