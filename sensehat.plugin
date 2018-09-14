@@ -6,52 +6,33 @@ class=SenseHAT
 read=get_temperature
 
 [SenseHAT Humidity]
+inherit=SenseHAT Temperature
 enabled=true
 channel=1
-module=sensehat
-class=SenseHAT
 read=get_humidity
 
 [SenseHAT Pressure]
+inherit=SenseHAT Temperature
 enabled=true
 channel=2
-module=sensehat
-class=SenseHAT
 read=get_pressure
 
 [SenseHAT Accelerometer]
+inherit=SenseHAT Temperature
 enabled=true
 channel=3
-module=sensehat
-class=SenseHAT
 read=get_acclerometer
 
 [SenseHAT Digital Actuator]
+inherit=SenseHAT Temperature
 enabled=true
 channel=4
-module=sensehat
-class=SenseHAT
 read=get_digital
 write=set_digital
 
 [SenseHAT Analog Actuator]
+inherit=SenseHAT Temperature
 enabled=true
 channel=5
-module=sensehat
-class=SenseHAT
 read=get_analog
 write=set_analog
-
-[SenseHAT Gyroscope]
-enabled=false #Not currently supported in Cayenne
-channel=6
-module=sensehat
-class=SenseHAT
-read=get_gyroscope
-
-[SenseHAT Magnetometer]
-enabled=false #Not currently supported in Cayenne
-channel=7
-module=sensehat
-class=SenseHAT
-read=get_magnetometer

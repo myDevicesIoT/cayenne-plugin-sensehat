@@ -29,7 +29,7 @@ If you do not have an actual Sense HAT board and would like to use the Sense HAT
    sudo apt-get install python-sense-emu python3-sense-emu sense-emu-tools
    ```
 2. Launch the Sense HAT Emulator from the Pi desktop.
-3. Add this entry to each section in the `sensehat.plugin` file: `init_args={"use_emulator": true}`.
+3. Add this entry to the `SenseHAT Temperature` section in the `sensehat.plugin` file: `init_args={"use_emulator": true}`.
 4. Restart the Cayenne Agent.
    ```
    sudo service myDevices restart
